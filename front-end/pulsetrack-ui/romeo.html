@@ -1,0 +1,23 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>
+            Counter <span id="counter">0</span>
+        </h1>
+        <button id="btn-add">
+            Add 1
+        </button>
+        <script>
+            let counterValue = 0;
+
+            const btnEl = document.querySelector("#btn-add");
+            const counterEl = document.querySelector("#counter");
+            btnEl.addEventListener("click", function() {
+                counterValue++;
+                counterEl.innerHTML = counterValue;
+            });
+        </script>
+    </body>
+</html>
